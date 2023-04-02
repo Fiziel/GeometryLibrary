@@ -4,8 +4,8 @@ namespace GeometryTasks
 {
     public class Vector
     {
-        public double X;
-        public double Y;
+        public double X { get; set; }
+        public double Y { get; set; }
 
         public double GetLength()
         {
@@ -25,10 +25,10 @@ namespace GeometryTasks
 
     public class Segment
     {
-        public Vector Begin;
-        public Vector End;
+        public Vector Begin { get; set; }
+        public Vector End { get; set; }
 
-        public double GetLength()
+    public double GetLength()
         {
             return Geometry.GetLength(this);
         }
